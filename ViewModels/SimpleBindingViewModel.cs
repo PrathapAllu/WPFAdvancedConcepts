@@ -10,6 +10,8 @@ namespace WPFAdvancedConcepts.ViewModels
         public List<Color> Colors { get; set; }
         public List<string> ColorNames { get; set; }
 
+        public string SelectedColor { get; set; }
+
         public SimpleBindingViewModel()
         {
             ColorNames = new List<string>();

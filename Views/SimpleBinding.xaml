@@ -18,18 +18,23 @@
             <TextBlock FontStyle="Italic">
             Note : In this view we'll learn these concepts
             <LineBreak/>
-            1.String to color converter
+            1.Binding viewmodel
             <LineBreak/>
-            2.Binding viewmodel
+             2.String to ColorConverter
             </TextBlock>
         </StackPanel>
 
         <StackPanel Grid.Row="1" Grid.Column="0">
             <ListBox x:Name="lblcolor" 
              ItemsSource="{Binding ColorNames}"
+             SelectedItem="{Binding SelectedColor}"
              Width="270" 
              Height="140" 
              FontSize="15"/>
+            <TextBlock>
+    <Run Text="Your Selected Color: "/>
+    <Run Text="{Binding SelectedColor}"/>
+            </TextBlock>
         </StackPanel>
 
         <StackPanel Grid.Row="1" Grid.Column="1">
