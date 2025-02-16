@@ -15,30 +15,38 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0" Grid.Column="0">
-            <TextBlock FontStyle="Italic">
+            <TextBlock>
             Note : In this view we'll learn these concepts
             <LineBreak/>
-            1.Binding viewmodel
+            1.Binding (OneWway, TwoWay)
             <LineBreak/>
              2.String to ColorConverter
+            <LineBreak/>
+             3.Element Binding
             </TextBlock>
         </StackPanel>
 
         <StackPanel Grid.Row="1" Grid.Column="0">
-            <ListBox x:Name="lblcolor" 
+
+            <StackPanel Margin="5">
+                <Label Content="Search Color: "></Label>
+                <TextBox Width="270" Height="20" Text="{Binding ElementName=lblcolor, Path=SelectedItem, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            </StackPanel>
+            <StackPanel Margin="5">
+                <ListBox x:Name="lblcolor" 
              ItemsSource="{Binding ColorNames}"
              SelectedItem="{Binding SelectedColor}"
              Width="270" 
              Height="140" 
              FontSize="15"/>
-            <TextBlock>
-    <Run Text="Your Selected Color: "/>
-    <Run Text="{Binding SelectedColor}"/>
-            </TextBlock>
+                <TextBlock Text="Your Selected color : "/>
+                <TextBlock Text="{Binding ElementName=lblcolor, Path=SelectedItem}" Background="{Binding ElementName=lblcolor, Path=SelectedItem}"/>
+            </StackPanel>
         </StackPanel>
 
         <StackPanel Grid.Row="1" Grid.Column="1">
-            <Border Margin="10" BorderBrush="DarkSlateGray" BorderThickness="1" Padding="10"              Width="270" 
+            <Border Margin="10" BorderBrush="DarkSlateGray" BorderThickness="1" Padding="10"              
+                    Width="270" 
              Height="140" >
                 <StackPanel>
                     <TextBlock Text="Selected Color Details:" FontWeight="Bold" Margin="0,0,0,10"/>
