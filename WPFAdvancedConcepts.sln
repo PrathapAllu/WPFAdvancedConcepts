@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFAdvancedConcepts", "WPFAdvancedConcepts.csproj", "{A9C8EE13-856C-466B-B2FE-52861241C45D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFAdvancedConceptsSupporter", "..\WPFAdvancedConceptsSupporter\WPFAdvancedConceptsSupporter.csproj", "{AD0FE20D-98DD-4AF5-A200-4C8FE0D25548}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9C8EE13-856C-466B-B2FE-52861241C45D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9C8EE13-856C-466B-B2FE-52861241C45D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9C8EE13-856C-466B-B2FE-52861241C45D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9C8EE13-856C-466B-B2FE-52861241C45D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD0FE20D-98DD-4AF5-A200-4C8FE0D25548}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD0FE20D-98DD-4AF5-A200-4C8FE0D25548}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD0FE20D-98DD-4AF5-A200-4C8FE0D25548}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD0FE20D-98DD-4AF5-A200-4C8FE0D25548}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
