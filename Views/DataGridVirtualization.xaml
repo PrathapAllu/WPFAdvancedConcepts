@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="WPFAdvancedConcepts.Views.DataGridVirtualization"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WPFAdvancedConcepts.Views"
+             mc:Ignorable="d" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0">
+            <TextBlock>
+            Note : In this view we'll learn these concepts
+            <LineBreak/>
+            1.DataGrid Virtualization
+            <LineBreak/>
+             2.Style templating
+            <LineBreak/>
+            </TextBlock>
+        </StackPanel>
+
+        <Grid Grid.Row="1">
+            <Label Content="{Binding lblDataGrid}"></Label>
+            <DataGrid ItemsSource="{Binding Colors}">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Name" Binding="{Binding Name}">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="Background" Value="{Binding Name}"/>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+
+    </Grid>
+</UserControl>

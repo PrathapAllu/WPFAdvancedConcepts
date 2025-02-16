@@ -3,11 +3,11 @@
 namespace WPFAdvancedConcepts.Views
 {
     /// <summary>
-    /// Interaction logic for SimpleBinding.xaml
+    /// Interaction logic for BindingCollectionsView.xaml
     /// </summary>
-    public partial class SimpleBinding : UserControl
+    public partial class BindingCollectionsView : UserControl
     {
-        public SimpleBinding()
+        public BindingCollectionsView()
         {
             InitializeComponent();
         }

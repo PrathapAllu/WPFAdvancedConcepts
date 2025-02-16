@@ -9,16 +9,21 @@
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
         Topmost="True"
-        Title="AdvancedWPF" Height="450" Width="700">
+        Title="AdvancedWPF" Height="500" Width="780">
     <Grid>
         <TabControl BorderBrush="Red" Margin="2">
             <TabItem Header="Simple Binding">
                 <views:SimpleBinding DataContext="{Binding SimpleBindingVM}"/>
             </TabItem>
-            <TabItem Header="Binding Collections"></TabItem>
-            <TabItem Header="Data Grid"></TabItem>
-            <TabItem Header="DataGrid Details View"></TabItem>
-            <TabItem Header="INotifyPropertyChanged"></TabItem>
+            <TabItem Header="Binding Collections">
+                <views:BindingCollectionsView DataContext="{Binding BindingCollectionVM}"/>
+            </TabItem>
+            <TabItem Header="DataGrid Virtualization">
+                <views:DataGridVirtualization DataContext="{Binding SimpleBindingVM}"/>
+            </TabItem>
+            <TabItem Header="DataGridPagination">
+                <views:DataGridPagination DataContext="{Binding SimpleBindingVM}"/>
+            </TabItem>
             <TabItem Header="GenericFormForEFCore"></TabItem>
         </TabControl>
     </Grid>

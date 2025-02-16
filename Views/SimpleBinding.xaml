@@ -18,7 +18,7 @@
             <TextBlock>
             Note : In this view we'll learn these concepts
             <LineBreak/>
-            1.Binding (OneWway, TwoWay)
+            1.Binding with Normal List(OneWway, TwoWay)
             <LineBreak/>
              2.String to ColorConverter
             <LineBreak/>
